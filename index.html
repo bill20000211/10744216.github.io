@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>intromyself</title>
+		<link rel="stylesheet" href="css/self.css" />
+		
+		<script src="fun.js"></script>
+	</head>
+	<body background="img/123.jpg" style="min-width: 1200px;">
+		
+		<button class="js-back-to-top back-to-top" title="回到頭部" style="font-size:30px;font-weight:bold;font-family: blackfont">&#65085;</button>
+		<div class="aside"><a href="https://www.instagram.com/peng_890211/?hl=zh-tw"><img src="img/123.webp"></a></div>
+		<div class="aside2"><a href="https://www.facebook.com/profile.php?id=100002165091037"><img src="img/FB.png"></a></div>
+		<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+		
+		<script>
+		$(function () {
+		var $win = $(window);
+		var $backToTop = $('.js-back-to-top');
+		// 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+		$win.scroll(function () {
+		if ($win.scrollTop() > 100) {
+		$backToTop.show();
+		} else {
+		$backToTop.hide();
+		}
+		});
+		// 當用戶點擊按鈕時，通過動畫效果返回頭部
+		$backToTop.click(function () {
+		$('html, body').animate({scrollTop: 0}, 200);
+		});
+		});
+		</script>
+		<!--head start-->
+		<div class="header">
+			<a href="#default" class="logo">PO_HAO</a><br>
+			<div class="header-right">
+				<a href="#place1" style="font-size: 30px">自介</a>
+				<a href="#place2" style="font-size: 30px">學歷</a>
+				<a href="#place3" style="font-size: 30px">目標</a>
+				<a href="#place4" style="font-size: 30px">照片</a>
+			</div>
+		</div>
+		<div class = "index-img">
+			<div class="slider_container">
+				<div>
+					<img src="img/f5.jpg" alt="pure css3 slider" />
+				</div>
+				<div>
+					<img src="img/f4.jpg" alt="pure css3 slider" />
+					
+				</div>
+				<div>
+					<img src="img/f3.jpg" alt="pure css3 slider" />
+					
+				</div>
+				<div>
+					<img src="img/f2.jpg" alt="pure css3 slider" />
+					
+				</div>
+				<div>
+					<img src="img/f1.jpg" alt="pure css3 slider" />
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		<!--head end-->
+		
+		<!--body area start-->
+		<div class="title" id="place1">
+			自我介紹
+		</div>
+		<div class="selfarea">
+			<div style="display:inline-block;margin-left:20px;" >
+				<img  class="selfphoto"  src="img/se.jpg" onmouseover="this.src='img/selfp.jpg'" onmouseout="this.src='img/se.jpg'">
+			</div>
+			<div class="sidearea" style="display:inline-block;margin-left:20px;">
+				姓名&nbsp;:&nbsp;彭柏豪<br>
+				生日&nbsp;:&nbsp;89/02/11<br>
+				興趣&nbsp;:&nbsp;騎車到處晃晃<br>
+				電話&nbsp;:&nbsp;0930-755-xxx<br>
+				e-mail&nbsp;:&nbsp;bill20000211@gmail.com<br><br>
+				我來自新北!!就讀中原資管
+			</div>
+		</div>
+		<div class="intro">
+			<img src="">
+		</div>
+		<div class="title" id="place2">
+			學歷
+		</div>
+		<div class="bigarea">
+			<div  style="display:inline-block;margin-left:20px;"class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="img/sc1.png" style="width:100%"  >
+					</div>
+					<div class="back">
+						<img src="img/ba1.png" style="width:100%"  >
+					</div>
+				</div>
+			</div>
+			<div  style="display:inline-block;margin-left:20px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="img/sc2.png" style="width:100%"  >
+					</div>
+					<div class="back">
+						<img src="img/ba2.png" style="width:100%"  >
+					</div>
+				</div>
+			</div>
+			<div  style="display:inline-block;margin-left:20px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="img/sc3.png" style="width:100%"  >
+					</div>
+					<div class="back">
+						<img src="img/ba3.png" style="width:100%"  >
+					</div>
+				</div>
+			</div>
+			<div  style="display:inline-block;margin-left:20px;" class="flip-container" ontouchstart="this.classList.toggle('hover');">
+				<div class="flipper">
+					<div class="front">
+						<img src="img/sc4.png" style="width:100%"  >
+					</div>
+					<div class="back">
+						<img src="img/ba4.png" style="width:100%"  >
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--body area end-->
+		<div class="title" id="place3">
+			大學目標
+		</div>
+		<div class="bigarea">
+			<div class="slogan">
+				吃得飽睡得好<br>
+				愛讀書沒煩惱<br>
+				不要後悔高中裝很吵得排氣管<br>
+				SKRSKR
+			</div>
+		</div>
+		<div class="title" id="place4">
+			照片
+		</div>
+		<div class="bigarea">
+			<div>
+			<div class="blackm">
+				<img src="img/black1.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m1.jpg'" onmouseout="this.src='img/black1.jpg'">
+			</div>
+			<div class="blackm">
+				<img src="img/black2.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m2.jpg'" onmouseout="this.src='img/black2.jpg'">
+			</div>
+			<div class="blackm">
+				<img src="img/black3.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m3.jpg'" onmouseout="this.src='img/black3.jpg'">
+			</div>
+		</div>
+		<div>
+			<div class="blackm2">
+				<img src="img/black4.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m4.jpg'" onmouseout="this.src='img/black4.jpg'">
+			</div>
+			<div class="blackm2">
+				<img src="img/black5.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m5.jpg'" onmouseout="this.src='img/black5.jpg'">
+			</div>
+			<div class="blackm2">
+				<img src="img/black6.jpg"  style="width:100%" class="aaa" onmouseover="this.src='img/m6.jpg'" onmouseout="this.src='img/black6.jpg'">
+			</div>
+		</div>
+		</div>
+		
+	</body>
+	<footer style=" width: 100%;" >
+		<p>Copyright © 2020 by PO_HAO</p>
+	</footer>
+</html>
